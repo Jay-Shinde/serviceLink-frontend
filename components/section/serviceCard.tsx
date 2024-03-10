@@ -1,7 +1,8 @@
 import React from 'react'
 import TagCompo from './Tag';
 
-const ServiceCard = () => {
+const ServiceCard = (props: { category: string; tag1: string; tag2: string; }) => {
+    const { category, tag1, tag2 } = props;
     return (
         <>
             <div className="h-80 w-64 rounded-xl flex flex-col overflow-hidden
@@ -14,11 +15,8 @@ const ServiceCard = () => {
                 </div>
                 <div className="bg-[#ff5151] h-1 w-full"></div>
                 <div className="h-[116px] w-full">
-                    <div className="fonts-poppins text-neutral-900 text-[16px] font-bold mt-5 mb-3">Sports</div>
-                    <div className="flex flex-row justify-around">
-                        <TagCompo tag="tagname" />
-                        <TagCompo tag="tagname" />
-                    </div>
+                    <div className="fonts-poppins text-neutral-900 text-[16px] font-bold mt-5 mb-3">{category}</div>
+
                 </div>
             </div>
         </>

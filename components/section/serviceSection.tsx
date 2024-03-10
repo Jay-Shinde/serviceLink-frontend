@@ -1,6 +1,61 @@
 import React from 'react'
 import ServiceCard from './serviceCard';
-
+const dummyData = [
+    {
+        category: "Sports",
+        tag1: "trainer",
+        tag2: "fitness",
+        tag3: "stayfit"
+    },
+    {
+        category: "Health",
+        tag1: "nutrition",
+        tag2: "diet",
+        tag3: "exercise"
+    },
+    {
+        category: "Travel",
+        tag1: "adventure",
+        tag2: "explore",
+        tag3: "vacation"
+    },
+    {
+        category: "Food",
+        tag1: "cooking",
+        tag2: "recipes",
+        tag3: "delicious"
+    },
+    {
+        category: "Technology",
+        tag1: "innovation",
+        tag2: "development",
+        tag3: "future"
+    },
+    {
+        category: "Fashion",
+        tag1: "style",
+        tag2: "trend",
+        tag3: "outfit"
+    },
+    {
+        category: "Music",
+        tag1: "genre",
+        tag2: "artist",
+        tag3: "song"
+    },
+    {
+        category: "Books",
+        tag1: "reading",
+        tag2: "novel",
+        tag3: "literature"
+    },
+    {
+        category: "Movies",
+        tag1: "genre",
+        tag2: "actor",
+        tag3: "cinema"
+    }
+];
 const ServiceSection = () => {
     return (
         <>
@@ -15,25 +70,8 @@ const ServiceSection = () => {
                         </div>
 
 
-                        <div className="h-80 w-64 rounded-xl flex flex-col overflow-hidden
-                                                border border-[color:var(--Light-Border-Color,rgba(200,203,217,0.33))] shadow-lg bg-white border-solid
-                                                hover:shadow-xl hover: cursor-pointer hover:translate-y-[-5px] transition-all 
-                                                my-4
-                                                ">
-                            <div className="h-[240px] w-full overflow-hidden">
-                                <img className="w-full h-full mt-8" src="/sports.svg" alt="" />
-                            </div>
-                            <div className="bg-orangered h-1 w-full"></div>
-                            <div className="h-[116px] w-full">
-                                <div className="fonts-poppins text-neutral-900 text-[16px] font-bold mt-5 mb-3">Sports</div>
-                                <div className="flex flex-row justify-around">
-                                    <span className=" bg-[#F4F6F8] py-2 px-3 rounded-md text-[10px] uppercase text-[#7B8EC8] ">tsdf1</span>
-                                    <span className=" bg-[#F4F6F8] py-2 px-3 rounded-md text-[10px] uppercase text-[#7B8EC8] ">tagsss2</span>
-                                    <span className=" bg-[#F4F6F8] py-2 px-3 rounded-md text-[10px] uppercase text-[#7B8EC8] ">tag3</span>
-                                </div>
-                            </div>
-                        </div>
-                        {Array.from({ length: 8 }).map(() => <ServiceCard />)}
+
+                        {dummyData.map((service) => <ServiceCard key={service.category} {...service} />)}
 
 
                     </div>

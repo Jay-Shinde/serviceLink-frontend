@@ -10,7 +10,7 @@ const BlogCard = () => {
                         Migrating to Linear 101
                     </div>
 
-                    <img src='click-arrow.svg' alt='arrow' className="!relative !w-[26.65px] !h-[26.65px]" />
+                    <img src='click-arrow.svg' alt='arrow' className="!relative !w-[24px] !h-[24px]" />
 
                 </div>
 

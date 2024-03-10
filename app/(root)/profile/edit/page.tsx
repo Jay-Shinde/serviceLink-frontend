@@ -21,7 +21,7 @@ async function Page() {
     image: userInfo ? userInfo?.image : user.imageUrl,
     creater: userInfo ? userInfo?.creater : false,
     onboarded: true,
-};
+  };
 
   return (
     <>

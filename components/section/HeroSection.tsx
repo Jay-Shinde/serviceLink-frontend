@@ -36,13 +36,21 @@ const HeroSection = (props: Props) => {
 
                 <div className='absolute top-0 z-0 lg:relative w-full lg:w-[58%] h-full flex flex-col items-center lg:items-start justify-center gap-4 py-4'>
                     <div className="flex h-1/2 gap-4 w-[90%] items-end justify-center">
-                        <div className="hidden xs:inline-block max-h-[250px] flex-shrink w-full h-full bg-red-50 rounded-2xl min-w-[100px] md:min-w-[230px] md:max-w-[330px]"></div>
-                        <div className="max-h-[250px]  w-full h-full bg-blue-50 rounded-2xl min-w-[180px] md:min-w-[350px] md:max-w-[490px]  "></div>
+                        <div className="overflow-hidden hidden xs:inline-block max-h-[250px] flex-shrink w-full h-full bg-red-50 rounded-2xl min-w-[100px] md:min-w-[230px] md:max-w-[330px]">
+                            <img src="./writer.jpg" alt="writer" />
+                        </div>
+                        <div className="overflow-hidden max-h-[250px]  w-full h-full bg-blue-50 rounded-2xl min-w-[180px] md:min-w-[350px] md:max-w-[490px]  ">
+                            <img src="./painter.jpg" alt="painter" />
+                        </div>
                     </div>
                     <div className="flex h-1/2 gap-4 w-[90%] items-start justify-center">
-                        <div className="hidden xs:inline-block w-full h-full bg-blue-50 rounded-2xl min-w-[100px] md:min-w-[350px] md:max-w-[490px]
-                     max-h-[250px]"></div>
-                        <div className="max-h-[250px] w-full min-w-[180px] md:min-w-[230px] md:max-w-[330px] h-full bg-red-50 rounded-2xl"></div>
+                        <div className="overflow-hidden hidden xs:inline-block w-full h-full bg-blue-50 rounded-2xl min-w-[100px] md:min-w-[350px] md:max-w-[490px]
+                     max-h-[250px]">
+                            <img src="./plumber.jpg" alt="plumber" />
+                        </div>
+                        <div className="overflow-hidden max-h-[250px] w-full min-w-[180px] md:min-w-[230px] md:max-w-[330px] h-full bg-red-50 rounded-2xl">
+                            <img src="./cleaner.jpg" alt="cleaner" />
+                        </div>
 
                     </div>
 
